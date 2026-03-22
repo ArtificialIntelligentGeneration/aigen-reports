@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aigen-reports"
+version = "0.1.0"
+description = "Read-only utility to pull TikTok Ads campaign metrics via the Marketing API."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Julian Reiter", email = "julian@aigen-agency.com" }]
+keywords = ["tiktok", "ads", "marketing-api", "reporting", "analytics"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Office/Business",
+  "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+  "requests>=2.31",
+  "click>=8.1",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+gsheet = ["google-api-python-client>=2.100", "google-auth>=2.20"]
+dev = ["pytest>=7", "ruff>=0.1"]
+
+[project.urls]
+Homepage = "https://aigen-agency.com"
+Repository = "https://github.com/ArtificialIntelligentGeneration/aigen-reports"
+Issues = "https://github.com/ArtificialIntelligentGeneration/aigen-reports/issues"
+
+[project.scripts]
+aigen-reports = "aigen_reports.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
