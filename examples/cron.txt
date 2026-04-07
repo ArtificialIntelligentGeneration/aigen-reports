@@ -1,0 +1,7 @@
+# Pull yesterday's TikTok Ads spend at 02:00 every night
+0 2 * * * cd /opt/aigen-reports && /usr/bin/env aigen-reports pull \
+  --advertiser 7xxxxxxxxxx \
+  --metric spend,clicks,conversions \
+  --breakdown campaign \
+  --range last-1d \
+  --out /var/log/aigen/$(date +\%Y-\%m-\%d).csv
