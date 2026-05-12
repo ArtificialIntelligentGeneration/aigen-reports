@@ -112,7 +112,7 @@ MIT. See [LICENSE](./LICENSE).
 
 ## Author
 
-Built by [Julian Reiter](mailto:julian@aigen-agency.com). The tool is
+Built by Hermann Saliter. The tool is
 released as open source because the underlying chore (manually
 exporting CSVs from the TikTok Ads Manager UI) is universal among ad
 operators. Bug reports and pull requests welcome.
