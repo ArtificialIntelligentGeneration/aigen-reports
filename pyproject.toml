@@ -9,7 +9,7 @@ description = "Read-only utility to pull TikTok Ads campaign metrics via the Mar
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-authors = [{ name = "Julian Reiter", email = "julian@aigen-agency.com" }]
+authors = [{ name = "Hermann Saliter" }]
 keywords = ["tiktok", "ads", "marketing-api", "reporting", "analytics"]
 classifiers = [
   "License :: OSI Approved :: MIT License",
