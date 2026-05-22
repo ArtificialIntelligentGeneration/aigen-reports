@@ -55,9 +55,9 @@ def pull(advertiser: str, metric: str, breakdown: str, range_spec: str, out_path
         raise click.ClickException("TIKTOK_ACCESS_TOKEN env var not set; run `aigen-reports auth`")
 
     dim_map = {
-        "campaign": ["campaign_id", "campaign_name", "stat_time_day"],
-        "adgroup": ["adgroup_id", "adgroup_name", "stat_time_day"],
-        "ad": ["ad_id", "ad_name", "stat_time_day"],
+        "campaign": ["campaign_id", "stat_time_day"],
+        "adgroup": ["adgroup_id", "stat_time_day"],
+        "ad": ["ad_id", "stat_time_day"],
     }
     metrics = [m.strip() for m in metric.split(",") if m.strip()]
     dimensions = dim_map[breakdown.lower()]
